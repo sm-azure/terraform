@@ -1,0 +1,11 @@
+resource "aws_instance" "sample" {
+
+    ami = "ami-28b0794b"
+    instance_type = "t2.micro"
+    key_name = "saikat-sg2"
+    tags {
+        Name = "bt-terraform"
+    }
+
+      
+}
